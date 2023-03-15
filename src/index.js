@@ -1,7 +1,5 @@
 import './style.css';
-
-
-
+import './modules/refresh.js';
 
 const displayData = async () => {
   const data = await requestAnimationFrame.getScore();
