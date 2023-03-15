@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard | Project</title>
+  </head>
+  <body>
+    <header class="header-section">
+      <h1>Leaderboard</h1>
+    </header>
+    <main class="main-work">
+      <section>
+        <div id="refresh-score">
+          <h4>Recent scores</h4>
+          <button type="button" id="refresh-btn">Refresh</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>David</td>
+              <td>300</td>
+              <tr>
+                <td>Moses</td>
+                <td>300</td>
+              </tr>
+              <tr>
+                <td>Helen</td>
+                <td>300</td>
+              </tr>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <aside>
+        <h2>Add your score</h2>
+        <form id="form">
+          <input
+            type="text"
+            name="user"
+            id="user"
+            placeholder="Enter user"
+            required
+          />
+          <input
+            type="number"
+            name="score"
+            id="score"
+            placeholder="Enter score"
+            required
+          />
+          <div>
+            <button type="submit" id="btn">Submit</button>
+          </div>
+        </form>
+      </aside>
+    </main>
+  </body>
+</html>

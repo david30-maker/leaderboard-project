@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#refresh-btn {
+  background-color: rgb(175, 175, 175);
+  border: none;
+  color: white;
+  margin: 4px 2px;
+  display: inline-block;
+  padding: 0 4px 0 4px;
+  margin-left: 32%;
+}
+
+.header-section {
+  padding:
+    10px 0 0
+    8px;
+}
+
+.main-work {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 0 0 10px;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#refresh-score {
+  display: flex;
+  gap: 41%;
+}
+
+h2 {
+  flex: 2;
+}
+
+table {
+  margin-top: 10px;
+  border: 2px solid #302b2b9e;
+  border-collapse: collapse;
+}
+
+tr,
+th {
+  border: 2px solid rgb(75, 69, 69, 0.651);
+  padding: 10px 10px;
+}
+
+tbody,
+tr,
+td {
+  border: 2px solid rgb(75, 69, 69, 0.651);
+  padding: 8px 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(175, 172, 172);
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=text],
+input[type=number] {
+  margin: 15px 8px 15px 0;
+}
+
+#btn {
+  width: auto;
+  margin-left: 92%;
+}
+
+@media screen and (max-width: 786px) {
+  .main-work {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 90%;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  #refresh-score {
+    display: flex;
+  }
+
+  aside {
+    width: 100%;
+  }
+}
