@@ -1,27 +1,28 @@
+/* eslint-disable */
 import './style.css';
-import './modules/refresh.js';
+import refresh from './modules/refresh.js';
 
 const displayData = async () => {
-  const data = await requestAnimationFrame.getScore();
+  const data = await request.getScore();
   refresh(data);
 };
 
 displayData();
 
-DocumentFragment.getElementById('refresh-score').addEventListener('click', async () => {
+document.getElementById('refresh-btn').addEventListener('click', async () => {
   displayData();
 });
 
-document.getElementById('form').addEventListener('click', async (e) => {
-  displayData();
+document.getElementById('form').addEventListener('submit', async (e) => {
+  e.preventDefault();
   const form1 = document.getElementById('form');
-  const { elem} = form1 ;
-  const dat ={
+  const elem = form1;
+  const data = {
     user: elem.user.value,
     score: elem.score.value,
   };
-  await requestAnimationFrame.addScore(dat);
+
+  await request.addScore(data);
   form1.reset();
   displayData();
-
 });
