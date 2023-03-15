@@ -23,4 +23,73 @@ body {
     color: white;
     margin: 4px 2px;
     display: inline-block;
+    padding: 0 4px 0 4px;
+}
+
+.header-section {
+    padding: 10px 0 0
+    8px;
+}
+
+.main-work {
+display: flex;
+justify-content: flex-start;
+padding: 0 0 0 10px;
+gap: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.refresh-score{
+    display: flex;
+    gap: 20px;
+}
+
+h2{
+    flex: 2;
+}
+
+table {
+    margin-top: 10px;
+    border: 3px solid #302b2b9e;
+    border-collapse: collapse;
+}
+
+tr, th {
+    border: 3px solid rgb(75, 69, 69, 0.651);
+    padding: 20px 20px;
+}
+
+tbody, tr, td {
+    border: 3px solid rgb(75, 69, 69, 0.651);
+    padding: 10px 10px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(175, 172, 172);
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text],
+input[type=number] {
+    margin: 15px 8px 15px 0;
+}
+
+#btn {
+    width: auto;
+    margin-left: 83%;
 }
