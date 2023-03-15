@@ -44,7 +44,7 @@ section {
     width: 50%;
 }
 
-.refresh-score{
+#refresh-score{
     display: flex;
     gap: 20px;
 }
@@ -79,7 +79,7 @@ aside {
     width: 50%;
 }
 
-.form {
+#form {
     display: flex;
     flex-direction: column;
 }

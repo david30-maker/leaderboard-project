@@ -1,12 +1,29 @@
-import _ from 'lodash';
 import './style.css';
-function component() {
-    const element = document.createElement('div');
-  
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-    return element;
-  }
-  
-  document.body.appendChild(component());
+
+
+
+
+const displayData = async () => {
+  const data = await requestAnimationFrame.getScore();
+  refresh(data);
+};
+
+displayData();
+
+DocumentFragment.getElementById('refresh-score').addEventListener('click', async () => {
+  displayData();
+});
+
+document.getElementById('form').addEventListener('click', async (e) => {
+  displayData();
+  const form1 = document.getElementById('form');
+  const { elem} = form1 ;
+  const dat ={
+    user: elem.user.value,
+    score: elem.score.value,
+  };
+  await requestAnimationFrame.addScore(dat);
+  form1.reset();
+  displayData();
+
+});
