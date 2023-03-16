@@ -18,7 +18,7 @@ document.getElementById('refresh-btn').addEventListener('click', async () => {
 
 document.getElementById('form').addEventListener('submit', async (e) => {
   e.preventDefault();
-  const form1 = document.getElementById('form');
+  const form = document.getElementById('form');
   const {elems} = form1;
   const data = {
     user: elems.user.value,
@@ -26,7 +26,7 @@ document.getElementById('form').addEventListener('submit', async (e) => {
   };
 
   await request.addScore(data);
-  form1.reset();
+  form.reset();
   displayData();
 });
 
