@@ -1,4 +1,3 @@
-/* eslint-disable */
 const refresh = async (scores) => {
   const tableBody = document.querySelector('tbody');
   tableBody.innerHTML = '';
@@ -13,4 +12,3 @@ const refresh = async (scores) => {
   });
 };
 export default refresh;
-

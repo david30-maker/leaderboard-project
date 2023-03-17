@@ -1,4 +1,3 @@
-/* eslint-disable */
 import './style.css';
 import Api from './modules/game-api.js';
 import refresh from './modules/display.js';
@@ -12,7 +11,7 @@ const displayData = async () => {
 
 displayData();
 
-document.querySelector('#refresh-btn').addEventListener('click', async (e) => {
+document.querySelector('#refresh-btn').addEventListener('click', async () => {
   displayData();
 });
 
@@ -25,4 +24,4 @@ document.querySelector('#score-form').addEventListener('submit', async (e) => {
   };
   await request.addScore(data);
   els.reset();
-}); 
+});
