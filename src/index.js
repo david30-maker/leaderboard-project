@@ -1,5 +1,5 @@
 /* eslint-disable */
-import './style.css';
+/*import './style.css';
 import Api from './modules/api.js';
 import refresh from './modules/refresh.js';
 
@@ -28,14 +28,13 @@ document.getElementById('form').addEventListener('submit', async (e) => {
   await request.addScore(data);
   form.reset();
   displayData();
-});
+}); */
 
 
 
-/*import './style.css';
-import './style.scss';
-import Api from './modules/api-controller.js';
-import refresh from './modules/refresh-view.js';
+import './style.css';
+import Api from './modules/api.js';
+import refresh from './modules/display.js';
 
 const request = new Api();
 
@@ -46,19 +45,19 @@ const displayData = async () => {
 
 displayData();
 
-document.getElementById('refresh').addEventListener('click', async () => {
+document.querySelector('#refresh-btn').addEventListener('click', async (e) => {
   displayData();
 });
 
-document.getElementById('score-form').addEventListener('submit', async (e) => {
+document.querySelector('#score-form').addEventListener('submit', async (e) => {
   e.preventDefault();
   const form = document.getElementById('score-form');
-  const { elements } = form;
+  const { els } = form;
   const data = {
-    user: elements.user.value,
-    score: elements.score.value,
+    user: els.user.value,
+    score: els.score.value,
   };
   await request.addScore(data);
   form.reset();
   displayData();
-}); */
+}); 
