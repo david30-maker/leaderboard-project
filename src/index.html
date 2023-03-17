@@ -7,22 +7,48 @@
     <title>Leaderboard</title>
   </head>
   <body>
-    <header><h1>Leaderboard</h1></header>
-    <section class="content">
-      <article class="left">
-        <div class="header">
-          <h2>Recent scores</h2>
-          <button type="button" class="refresh">Refresh</button>
+    <header class="header-section">
+      <h1>Leaderboard</h1>
+    </header>
+    <main class="main-work">
+      <section>
+        <div id="refresh-score">
+          <h4>Recent scores</h4>
+          <button type="button" id="refresh-btn">refresh</button>
         </div>
-        <ul class="display"></ul>
-      </article>
-      <form class="score">
-        <label><h2>Add your score</h2></label>
-        <input placeholder="Your name" type="text" class="yourName" />
-        <input placeholder="Your score" type="number" class="yourScore" />
-        <button class="submit" type="submit">Submit</button>
-      </form>
-    </section>
-    <footer class="footer"><span>Copyright</span></footer>
+        <table>
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <aside>
+        <h2>Add your score</h2>
+        <form id="score-form">
+          <input
+            type="text"
+            name=""
+            id="user"
+            placeholder="Enter your name"
+            required
+          />
+          <input
+            type="number"
+            name=""
+            id="score"
+            placeholder="Enter your score"
+            required
+          />
+          <div>
+            <button type="submit" id="btn">Submit</button>
+          </div>
+        </form>
+      </aside>
+    </main>
   </body>
 </html>
