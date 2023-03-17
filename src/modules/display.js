@@ -12,5 +12,5 @@ const refresh = async (scores) => {
     tableBody.appendChild(tableRow);
   });
 };
-export {refresh}
+export default refresh;
 
