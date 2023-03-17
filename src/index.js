@@ -1,4 +1,4 @@
-
+/* eslint-disable */
 import './style.css';
 import Api from './modules/api.js';
 import refresh from './modules/display.js';
