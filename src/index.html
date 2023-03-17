@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leaderboard</title>
+    <title>Leaderboard | Project</title>
   </head>
   <body>
     <header class="header-section">
@@ -14,7 +14,7 @@
       <section>
         <div id="refresh-score">
           <h4>Recent scores</h4>
-          <button type="button" id="refresh-btn">refresh</button>
+          <button type="button" id="refresh-btn">Refresh</button>
         </div>
         <table>
           <thead>
@@ -23,25 +23,37 @@
               <th>Score</th>
             </tr>
           </thead>
-          <tbody></tbody>
+          <tbody>
+            <tr>
+              <td>David</td>
+              <td>300</td>
+              <tr>
+                <td>Moses</td>
+                <td>300</td>
+              </tr>
+              <tr>
+                <td>Helen</td>
+                <td>300</td>
+              </tr>
+            </tr>
+          </tbody>
         </table>
       </section>
-
       <aside>
         <h2>Add your score</h2>
-        <form id="score-form">
+        <form id="form">
           <input
             type="text"
-            name=""
+            name="user"
             id="user"
-            placeholder="Enter your name"
+            placeholder="Enter user"
             required
           />
           <input
             type="number"
-            name=""
+            name="score"
             id="score"
-            placeholder="Enter your score"
+            placeholder="Enter score"
             required
           />
           <div>
