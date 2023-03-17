@@ -33,13 +33,14 @@ document.getElementById('form').addEventListener('submit', async (e) => {
 
 
 import './style.css';
-import Api from './modules/api.js';
-import refresh from './modules/display.js';
+import Api from './modules/game-api.js';
+import refresh from './modules/display';
 
 const request = new Api();
 
 const displayData = async () => {
   const data = await request.getScores();
+  console.log(data)
   refresh(data);
 };
 
@@ -51,13 +52,12 @@ document.querySelector('#refresh-btn').addEventListener('click', async (e) => {
 
 document.querySelector('#score-form').addEventListener('submit', async (e) => {
   e.preventDefault();
-  const form = document.getElementById('score-form');
-  const { els } = form;
+  const els = document.getElementById('score-form');
   const data = {
     user: els.user.value,
     score: els.score.value,
   };
   await request.addScore(data);
-  form.reset();
+  els.reset();
   displayData();
 }); 

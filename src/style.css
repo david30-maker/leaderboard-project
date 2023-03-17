@@ -14,13 +14,14 @@ body {
 
 #refresh-btn {
   border: 1.3px solid rgb(151, 147, 147);
-  margin: 4px 2px;
+  border-radius: 4px;
+  margin: 0 0 0 31.4%;
   padding: 0 4px 0 4px;
-  margin-left: 32%;
+  margin-left: 31.4%;
 }
 
 .header-section {
-  padding: 10px 0 0 8px;
+  margin: 25px 0 0 50px;
 }
 
 .main-work {
@@ -39,35 +40,31 @@ section {
 
 #refresh-score {
   display: flex;
-  gap: 95px;
-}
-
-h2 {
-  flex: 2;
+  gap: 165px;
 }
 
 table {
   margin-top: 10px;
-  border: 2px solid #302b2b9e;
+  border: 2px solid #8683839e;
   border-collapse: collapse;
   
 }
 
 tr,
 th {
-  border: 2px solid rgb(75, 69, 69, 0.651);
+  border: 2px solid rgba(238, 236, 236, 0.7);
   padding: 10px 10px;
 }
 
 tbody,
 tr,
 td {
-  border: 2px solid rgb(75, 69, 69, 0.651);
+  border: 2px solid rgb(238, 236, 236, 0.7);
   padding: 8px 8px;
 }
 
 tr:nth-child(even) {
-  background-color: rgb(175, 172, 172);
+  background-color: rgb(247, 243, 243);
 }
 
 aside {
@@ -88,8 +85,8 @@ input[type=number] {
 }
 
 #btn {
-  width: auto;
-  margin-left: 326px;
+  border-radius: 4px;
+  margin-left: 430px;
 }
 
 @media screen and (max-width: 786px) {
