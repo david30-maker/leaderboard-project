@@ -7,7 +7,6 @@ const request = new Api();
 
 const displayData = async () => {
   const data = await request.getScores();
-  console.log(data)
   refresh(data);
 };
 
