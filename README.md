@@ -31,7 +31,7 @@ This project enables you add name and score of participant in race or ccompetiti
 
 - HTML
 - CSS
-- Javascript
+- Javascript.
 
 ### Tech Stack <a name="tech-stack"></a>
 
