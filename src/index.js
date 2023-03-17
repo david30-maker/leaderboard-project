@@ -1,6 +1,6 @@
 /* eslint-disable */
 import './style.css';
-import Api from './modules/api.js';
+import Api from './modules/game-api.js';
 import refresh from './modules/display.js';
 
 const request = new Api();
