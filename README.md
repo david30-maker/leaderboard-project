@@ -22,9 +22,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [AWESOME BOOK PROJECT] <a name="about-project"></a>
+# 📖 [LearderBoard] <a name="about-project"></a>
 
-**[AWESOME_BOOK_PROJECT]**
+**[LearderBoard]**
 This project enables you add name and score of participant in race or ccompetition, you can also refresh your records.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -44,13 +44,11 @@ This project enables you add name and score of participant in race or ccompetiti
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](to be updated)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -65,7 +63,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-- (https://github.com/david30-maker/leaderboard-project)
+- (git@github.com:david30-maker/leaderboard-project.git)
 - cd leaderboard-project
 
 ### Install
@@ -106,6 +104,8 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- **[Add_Styling]**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
@@ -130,7 +130,7 @@ If you like this project please give ratings...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank to microverse
+I would like say to thank to Microverse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
