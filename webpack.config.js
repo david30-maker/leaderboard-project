@@ -1,31 +1,80 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+/* eslint-disable */
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
   mode: 'development',
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ["babel-loader"]
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+    ],
+  },
+  entry: './src/index.js',
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
     }),
   ],
-  devServer: {
-    static: './dist',
-  },
   output: {
-    filename: '[name].js',
+    filename: 'leaderboard.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
+  devServer: {
+    static: path.join(__dirname, 'dist'),
+    compress: true,
+   
+  },
+};
+/* eslint-disable */
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+  mode: 'development',
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ["babel-loader"]
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },
-  optimization: {
-    runtimeChunk: 'single',
+  entry: './src/index.js',
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src', 'index.html'),
+    }),
+  ],
+  output: {
+    filename: 'leaderboard.js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
+  },
+  devServer: {
+    static: path.join(__dirname, 'dist'),
+    compress: true,
+   
   },
 };
