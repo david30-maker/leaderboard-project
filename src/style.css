@@ -16,13 +16,13 @@ body {
 #refresh-btn {
   border: 1.3px solid rgb(151, 147, 147);
   border-radius: 4px;
-  margin: 0 0 0 31.4%;
+  margin: 0 0 0 20%;
   padding: 0 4px 0 4px;
-  margin-left: 31.4%;
+  
 }
 
 .header-section {
-  margin: 25px 0 0 100px;
+  margin: 30px 0 0 100px;
   background:
     linear-gradient(
       to right,
@@ -38,7 +38,7 @@ body {
     );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 50px;
+  font-size: 15px;
   font-weight: bolder;
   line-height: 1.2;
   letter-spacing: 0.1rem;
@@ -61,15 +61,14 @@ section {
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 50%;
+  height: 30%;
   background-color: white;
-  overflow: scroll;
-
+  
 }
 
 #refresh-score {
   display: flex;
-  gap: 165px;
+  gap: px;
   
 }
 
