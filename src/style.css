@@ -16,7 +16,7 @@ body {
 #refresh-btn {
   border: 1.3px solid rgb(151, 147, 147);
   border-radius: 4px;
-  margin: 0 0 0 20%;
+  margin: 5px 0 0 20%;
   padding: 0 4px 0 4px;
   
 }
@@ -63,12 +63,12 @@ section {
   width: 50%;
   height: 30%;
   background-color: white;
-  
+  overflow: scroll;
 }
 
 #refresh-score {
   display: flex;
-  gap: px;
+  gap: 203px;
   
 }
 
@@ -97,6 +97,11 @@ tr:nth-child(even) {
 
 tr:nth-child(odd) {
   background-color: rgb(241, 130, 130);
+}
+
+ tr th {
+  background-color: aliceblue;
+  text-align: start;
 }
 
 aside {
