@@ -18,6 +18,8 @@ body {
   border-radius: 4px;
   margin: 5px 0 0 20%;
   padding: 0 4px 0 4px;
+  cursor: pointer;
+  font-size: 15px;
   
 }
 
@@ -78,7 +80,7 @@ section {
 
 #refresh-score {
   display: flex;
-  gap: 203px;
+  gap: 199px;
   
 }
 
@@ -112,6 +114,7 @@ tr:nth-child(odd) {
  tr th {
   background-color: aliceblue;
   text-align: start;
+  font-size: 18px;
 }
 
 aside {
@@ -127,13 +130,16 @@ aside {
 
 input[type=text],
 input[type=number] {
-  margin: 15px 8px 15px 0;
+  margin: 10px 8px 10px 0;
+  font-size: 17px;
 }
 
 #btn {
   border-radius: 4px;
-  margin-left: 430px;
+  margin-left: 421px;
   cursor: pointer;
+  padding: 0 2.5px 0 2.5px;
+  font-size: 15px;
 }
 
 #btn:hover {
@@ -142,7 +148,7 @@ color: white;
 }
 
 #btn:activee {
-  background-color: #090411;
+  background-color: #04010a;
   color: white;
   }
 
