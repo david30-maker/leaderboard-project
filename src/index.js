@@ -1,18 +1,18 @@
 import './style.css';
 import Api from './modules/game-api.js';
-import refresh from './modules/display.js';
+import display from './modules/display.js';
 
 const request = new Api();
 
-const displayData = async () => {
+const getData = async () => {
   const data = await request.getScores();
-  refresh(data);
+  display(data);
 };
 
-displayData();
+getData();
 
 document.querySelector('#refresh-btn').addEventListener('click', async () => {
-  displayData();
+  getData();
 });
 
 document.querySelector('#score-form').addEventListener('submit', async (e) => {

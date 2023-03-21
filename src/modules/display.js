@@ -1,4 +1,4 @@
-const refresh = async (scores) => {
+const display = async (scores) => {
   const tableBody = document.querySelector('tbody');
   tableBody.innerHTML = '';
   scores.forEach((el) => {
@@ -11,4 +11,4 @@ const refresh = async (scores) => {
     tableBody.appendChild(tableRow);
   });
 };
-export default refresh;
+export default display;
