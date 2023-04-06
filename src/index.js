@@ -1,28 +1,27 @@
-/* eslint-disable */
 import './style.css';
-import refresh from './modules/refresh.js';
+import Api from './modules/game-api.js';
+import refresh from './modules/display.js';
+
+const request = new Api();
 
 const displayData = async () => {
-  const data = await request.getScore();
+  const data = await request.getScores();
   refresh(data);
 };
 
 displayData();
 
-document.getElementById('refresh-btn').addEventListener('click', async () => {
+document.querySelector('#refresh-btn').addEventListener('click', async () => {
   displayData();
 });
 
-document.getElementById('form').addEventListener('submit', async (e) => {
+document.querySelector('#score-form').addEventListener('submit', async (e) => {
   e.preventDefault();
-  const form1 = document.getElementById('form');
-  const elem = form1;
+  const els = document.getElementById('score-form');
   const data = {
-    user: elem.user.value,
-    score: elem.score.value,
+    user: els.user.value,
+    score: els.score.value,
   };
-
   await request.addScore(data);
-  form1.reset();
-  displayData();
+  els.reset();
 });
