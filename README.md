@@ -43,7 +43,7 @@ This project enables you add name and score of participant in race or ccompetiti
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]( https://david30-maker.github.io/leaderboard-project/)
+- [Live Demo Link](https://david30-maker.github.io/leaderboard-project/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
